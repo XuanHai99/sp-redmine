@@ -12,7 +12,7 @@ class Search extends GetView<SearchController> {
       child: Scaffold(
         appBar: AppBar(
           title: Text(
-            "申請／承認 履歴",
+            "Search",
             style: Get.textTheme.headline2,
           ),
           centerTitle: true,
@@ -51,7 +51,7 @@ class Search extends GetView<SearchController> {
               Container(
                 width: Get.width * 0.3,
                 child: Text(
-                  '申請者',
+                  'Applicant',
                   style: Get.textTheme.headline2!
                       .copyWith(color: Colors.grey, fontSize: 20),
                 ),
@@ -81,7 +81,7 @@ class Search extends GetView<SearchController> {
               Container(
                 width: Get.width * 0.3,
                 child: Text(
-                  '所属',
+                  'Belongs',
                   style: Get.textTheme.headline2!
                       .copyWith(color: Colors.grey, fontSize: 20),
                 ),
@@ -111,7 +111,7 @@ class Search extends GetView<SearchController> {
               Container(
                 width: Get.width * 0.3,
                 child: Text(
-                  '申請モデル',
+                  'Application model',
                   style: Get.textTheme.headline2!
                       .copyWith(color: Colors.grey, fontSize: 20),
                 ),
@@ -144,7 +144,7 @@ class Search extends GetView<SearchController> {
               Container(
                 width: Get.width * 0.3,
                 child: Text(
-                  '申請日',
+                  'Application date',
                   style: Get.textTheme.headline2!
                       .copyWith(color: Colors.grey, fontSize: 20),
                 ),
@@ -234,7 +234,7 @@ class Search extends GetView<SearchController> {
               Container(
                 width: Get.width * 0.3,
                 child: Text(
-                  'フリーワード',
+                  'Free word',
                   style: Get.textTheme.headline2!
                       .copyWith(color: Colors.grey, fontSize: 20),
                 ),
@@ -261,7 +261,7 @@ class Search extends GetView<SearchController> {
           SizedBox(height: 16),
           ElevatedButton(
               child: Text(
-                '検索',
+                'Search',
                 style: Get.textTheme.headline2!
                     .copyWith(color: Colors.white, fontSize: 20),
               ),
@@ -288,7 +288,7 @@ class Search extends GetView<SearchController> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    '終了日が開始日より前の日付になっています。\n終了日には開始日以降の日付を指定して下さい。',
+                    'The end date is earlier than the start date.\nFor the end date, specify a date after the start date.',
                     style:
                     Get.textTheme.subtitle1!.copyWith(fontSize: 14),
                   ),
@@ -313,7 +313,7 @@ class Search extends GetView<SearchController> {
           height: Get.height*0.072,
           width: Get.width,
           color: Colors.green,
-          child: Text('検索結果',style: Get.textTheme.headline2!.copyWith(color: Colors.white,fontSize: 20),),
+          child: Text('Search Results',style: Get.textTheme.headline2!.copyWith(color: Colors.white,fontSize: 20),),
         ),
         ListView.builder(
           shrinkWrap: true,
